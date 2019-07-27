@@ -54,3 +54,47 @@
     margin-top: 20px;
     margin-bottom: 30px;
 }
+
+.note{
+    margin-left: 60px;
+    margin-bottom: 15px;
+    border: 1px solid #FF9600;
+    padding: 10px 20px;
+    width: 670px;
+}
+.number-item li{
+    display: inline-block;
+}
+.number-item li a{
+    background-color: #FFB449;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    display: inline-block;
+    text-decoration-line: none;
+    color: #fff;
+}
+.number-item{
+    display: inline-block;
+}
+.payment>a{
+    padding: 10px 5px;
+    background-color: #FFB449;
+    float: right;
+    margin-right: 100px;
+    color: #fff;
+    text-decoration-line: none;
+}
+.payment>a span{
+    margin-left:70px;
+}
+.order-list .item-quantity{
+    background-color: #FFA626;
+    width: 25px;
+    height: 25px;
+    display: inline-block;
+    text-align: center
+}
+.order-list{
+    text-align: left
+}
