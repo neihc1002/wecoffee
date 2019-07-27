@@ -28,12 +28,14 @@
     text-align: center;
     padding: 80px 400px;
 }
-#content-1>div .content-1-title{
+#content-1>div .content-1-title, #content-2>div .content-2-title{
     color: #FF9600;
     text-transform: uppercase;
     font-weight: bold;
     padding-bottom: 5px;
     border-bottom: 2px solid black;
     display: inline-block;
-    margin-bottom: 40px
+}
+#content-1 .content-1-body{
+    margin-top: 40px;
 }
