@@ -1,0 +1,23 @@
+.no-padding {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.slogan-thumb {
+    float: left
+}
+.slogan-thumb img {
+    display: block
+}
+
+.slogan{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    width: 700px;
+}
+.slogan-content{
+    margin-top: 10px
+}
