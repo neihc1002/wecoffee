@@ -21,3 +21,19 @@
 .slogan-content{
     margin-top: 10px
 }
+#content-1{
+    background-color: #E3E1E1
+}
+#content-1>div{
+    text-align: center;
+    padding: 80px 400px;
+}
+#content-1>div .content-1-title{
+    color: #FF9600;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding-bottom: 5px;
+    border-bottom: 2px solid black;
+    display: inline-block;
+    margin-bottom: 40px
+}
