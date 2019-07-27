@@ -24,3 +24,17 @@
 .active{
     border-bottom: 2px solid #fff
 }
+#footer{
+    background-color: black;
+}
+#footer .footer-row-1 a{
+    text-decoration-line: none;
+    color: #fff;
+}
+#footer .footer-row-1 ul{
+    list-style: none;
+}
+#footer .footer-row-1 li{
+    color: #fff;
+    margin-bottom: 10px;
+}
