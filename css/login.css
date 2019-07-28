@@ -1,0 +1,36 @@
+#form .btn-login{
+    width: 100%;
+    background-color: #FF9600;
+    display: block;
+    padding: 10px 0px;
+    text-decoration-line: none;
+    color: #fff;
+}
+#form .phone-input{
+    width: 100%;
+    padding: 5px 10px;
+    font-size: 20px;
+    outline-color: #000;
+}
+#form .phone-input:focus{
+    outline-color: #FF9600;
+}
+#form .login-another{
+    text-align: center;
+    float: left;
+    padding: 10px 0px;
+    width: 50%;
+}
+
+#form .login-another:nth-child(1){
+    background-color: #BDBDBD;
+    color: #000000;
+}
+#form .login-another:nth-child(2){
+    background-color: #212121;
+    color: #FFFFFF;
+}
+
+.form-pad{
+    padding-bottom: 100px;
+}
