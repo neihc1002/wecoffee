@@ -4,6 +4,7 @@ $(document).ready(function () {
         e.preventDefault()
         if(localStorage.getItem('user')===null){
             location.href = 'login.html'
+            return;
         }
         $('.quantity').text('1')
         var name = $(this).parent().find('h5').text();
