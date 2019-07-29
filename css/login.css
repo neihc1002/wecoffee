@@ -1,4 +1,4 @@
-#form .btn-login{
+#form .btn-login,#form .btn-reg,.btn-login-email{
     width: 100%;
     background-color: #FF9600;
     display: block;
@@ -15,22 +15,34 @@
 #form .phone-input:focus{
     outline-color: #FF9600;
 }
-#form .login-another{
+#form .btn-a{
     text-align: center;
     float: left;
     padding: 10px 0px;
     width: 50%;
+    text-decoration-line: none;
 }
 
-#form .login-another:nth-child(1){
+#form .btn-a:nth-child(1){
     background-color: #BDBDBD;
     color: #000000;
 }
-#form .login-another:nth-child(2){
+#form .btn-a:nth-child(2){
     background-color: #212121;
     color: #FFFFFF;
 }
 
-.form-pad{
-    padding-bottom: 100px;
+.form-mar-bot{
+    margin-bottom: 40px;
+}
+#form{
+    background-color: #E8E8E8;
+    padding: 200px;
+}
+
+.form-mar-bot-1{
+    margin-bottom: 20px;
+}
+.reg-form,.login-form-email{
+    display: none;
 }

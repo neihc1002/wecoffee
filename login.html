@@ -36,7 +36,10 @@
                                 <a href="#">Cửa hàng</a>
                             </li>
                             <li class="active">
-                                <a href="login.html">Đăng nhập</a>
+                                <a href="#" id="login-page">Đăng nhập</a>
+                                <div>
+                                    <a href="#" id="logout">Đăng xuất</a>
+                                </div>
                             </li>
                             <li>
                                 <a href="#"><i class="fa fa-search" style="font-size: 20px"></i></a>
@@ -50,14 +53,41 @@
     <section id="form">
         <div class="container">
             <div class="row">
-                <div style="" class="offset-3 col-md-5">
-                    <h5 class="form-pad">Đăng nhập</h5>
-                    <input class="phone-input form-pad" type="text">
-                    <a class="btn-login text-center form-pad" href="#">Đăng nhập</a>
-                    <h6 class="form-pad">Hoặc đăng nhập bằng</h6>
-                    <div class="form-pad">
-                        <a class="login-another" text-center" href="#">FACEBOOK</a>
-                        <a class="login-another text-center" href="#">EMAIL</a>
+                <div style="" class="offset-4 col-md-5">
+                    <div>
+                        <div class="login-form">
+                            <h5 class="form-mar-bot">Đăng nhập</h5>
+                            <input placeholder="Nhập số điện thoại của bạn" class="phone-input form-mar-bot" type="text">
+                            <a class="btn-login text-center form-mar-bot" href="#">Đăng nhập</a>
+                            <h6 class="form-mar-bot">Hoặc đăng nhập bằng</h6>
+                            <div class="">
+                                <a class="login-another btn-a" text-center" href="#">FACEBOOK</a>
+                                <a class="login-another-email btn-a text-center" href="#">EMAIL</a>
+                            </div>
+                        </div>
+                        <div class="reg-form">
+                            <h5 class="form-mar-bot">Đăng ký</h5>
+                            <h5 class="form-mar-bot-1">Họ</h5>
+                            <input required name="ho" placeholder="Họ của bạn" class="phone-input form-mar-bot-1"
+                                type="text">
+                            <h5 class="form-mar-bot-1">Tên</h5>
+                            <input name="ten" required placeholder="Tên của bạn" class="phone-input form-mar-bot-1"
+                                type="text">
+                            <h5 class="form-mar-bot-1">Ngày sinh</h5>
+                            <input required class="phone-input form-mar-bot" type="text">
+                            <a class="btn-reg text-center form-mar-bot" href="#">Đăng ký</a>
+                        </div>
+                        <div class="login-form-email">
+                                <h5 class="form-mar-bot">Đăng nhập</h5>
+                                <input name="email" placeholder="Nhập email của bạn" class="phone-input form-mar-bot" type="text">
+                                <input placeholder="Mật khẩu" class="phone-input form-mar-bot" type="text">
+                                <a class="btn-login-email text-center form-mar-bot" href="#">Đăng nhập</a>
+                                <h6 class="form-mar-bot">Hoặc đăng nhập bằng</h6>
+                                <div class="">
+                                    <a class="login-another btn-a" text-center" href="#">FACEBOOK</a>
+                                    <a class="login-another-phone  btn-a text-center" href="#">ĐIỆN THOẠI</a>
+                                </div>
+                            </div>
                     </div>
                 </div>
             </div>
@@ -155,6 +185,9 @@
         </div>
     </section>
 </body>
-<script src="js/owl.carousel.min.js"></script>
+<script src="js/jquery-3.4.1.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/main.js"></script>
+<script src="js/login.js"></script>
 
 </html>

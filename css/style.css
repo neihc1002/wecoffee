@@ -12,12 +12,12 @@
     margin: 0 auto;
 }
 
-#nav .menu li a{
+#nav .menu li>a{
     color: #ffffff;
     padding-bottom: 25px;
     text-decoration-line: none;
     text-transform: uppercase;
-    font-size: 15px;
+    font-size: 14px;
 }
 
 .active{
@@ -36,4 +36,16 @@
 #footer .footer-row-1 li{
     color: #fff;
     margin-bottom: 10px;
+}
+#logout{
+    position: absolute;
+    top: 70px;
+    right: 72px;
+    border: 1px solid #707070;
+    padding: 0px 13px;
+    background-color: #FFFFFF;
+    color: #FF0000;
+    text-decoration-line: none;
+    display: none;
+    z-index: 999999;
 }
