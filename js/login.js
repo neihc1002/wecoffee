@@ -6,8 +6,12 @@ $(document).ready(function () {
     })
     $('.btn-reg').on('click', function (e) {
         e.preventDefault();
-        var name = $('[name=ho]').val()+' '+ $('[name=ten]').val();
-        localStorage.setItem("user", name);
+        var ho = $('[name=ho]').val()
+        var ten =  $('[name=ten]').val();
+        var name = ho+' '+ten;
+        if(name.trim().length>0){
+            localStorage.setItem("user", name);
+        }
         alert("Đăng nhập thành công! Quay về trang chủ")
         location.href = "index.html"
     })
