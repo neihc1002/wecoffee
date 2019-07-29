@@ -9,6 +9,7 @@ $(document).ready(function () {
         $('#logout').on('click',function (e) {
             e.preventDefault();
             localStorage.clear('user')
+            localStorage.clear('cart')
             location.reload();
         })
         $('.item .buy').on('click',function (e) {
