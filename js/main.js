@@ -11,10 +11,19 @@ $(document).ready(function () {
             localStorage.clear('user')
             location.reload();
         })
+        $('.item .buy').on('click',function (e) {
+            e.preventDefault();
+            location.href = 'menu.html'
+        })
     }else{
         $('#login-page').on('click',function (e) {
             e.preventDefault();
             location.href = "login.html"
         })
+        $('.item .buy').on('click',function (e) {
+            e.preventDefault();
+            location.href = 'login.html'
+        })
     }
+    
 })

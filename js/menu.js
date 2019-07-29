@@ -2,6 +2,9 @@ $(document).ready(function () {
     updateTotal()
     $('.item-info a').on('click', function (e) {
         e.preventDefault()
+        if(localStorage.getItem('user')===null){
+            location.href = 'login.html'
+        }
         $('.quantity').text('1')
         var name = $(this).parent().find('h5').text();
         var image = $(this).parent().parent().parent().find('.item-image').attr('src');
