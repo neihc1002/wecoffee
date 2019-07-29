@@ -1,3 +1,22 @@
-.full-width{
-    width: 100%;
+
+.item{
+    position: relative;
+}
+.item h3{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    text-transform: uppercase;
+    color: #fff;
+}
+.title{
+    color: #FF9600;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding-bottom: 3px;
+    border-bottom: 2px solid black;
+    display: inline-block;
+    margin-bottom: 40px;
 }

@@ -1,0 +1,94 @@
+#guide .step .number{
+    width: 60px;
+    height: 60px;
+    display: block;
+    background-color: #000;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 60px;
+    font-size: 30px;
+    font-weight: bold;
+    color: #fff;
+    float: left;
+}
+#guide .step li div{
+    margin-left: 100px
+}
+
+#guide .step li{
+    margin-bottom: 60px
+}
+.step{
+    margin-top: 50px;
+}
+#guide .step li div h3{
+    margin-bottom: 30px
+}
+.hl{
+    color: #EF9516;
+}
+.title{
+    color: #FF9600;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding-bottom: 3px;
+    border-bottom: 2px solid black;
+    display: inline-block;
+    margin-bottom: 40px;
+}
+#guide{
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.til {
+    overflow: hidden;
+    text-align: center;
+  }
+  
+  .til:before,
+  .til:after {
+    background-color: #000;
+    content: "";
+    display: inline-block;
+    height: 1px;
+    position: relative;
+    vertical-align: middle;
+    width: 50%;
+  }
+  
+  .til:before {
+    right: 0.5em;
+    margin-left: -50%;
+  }
+  
+  .til:after {
+    left: 0.5em;
+    margin-right: -50%;
+  }
+  .til span{
+    padding: 0 25px
+  }
+  .hl-til{
+      color: #FF9600;
+  }
+  #member{
+      background-color: #E3E1E1;
+     
+  }
+  #member .gold-member{
+      margin-bottom: 40px;
+      margin-top: 20px;
+  }
+  .become-member:hover{
+    text-decoration: none;
+    color: #fff;
+  }
+.become-member{
+    text-decoration: none;
+    color: #fff;
+    background-color: #EF9516;
+    padding: 20px 90px;
+    border-radius: 20px;
+    font-size: 15px;
+}
