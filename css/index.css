@@ -117,3 +117,44 @@
 .ws_images{
     position: initial !important;
 }
+
+
+.carousel-indicators .active{
+    width: 18px;
+    height: 18px;
+}
+
+.carousel-indicators{
+    margin: 0;
+    right: inherit;
+    bottom: 150px;
+    margin-left: 100px;
+}
+
+.carousel-indicators li {
+    width: 15px;
+    height: 15px;
+    text-align: center;
+    line-height: 2em;
+    border-radius: 50%;
+    background: #fff;
+    margin: 0 1em;
+    display: inline-block;
+    color: white;
+    position: relative;
+    margin-left: 60px;
+  }
+  
+  .carousel-indicators li::before{
+    content: '';
+    position: absolute;
+    top: 7px;
+    left: -10em;
+    width: 13em;
+    height: .1em;
+    background: #fff;
+    z-index: -1;
+     vertical-align:middle
+  }
+
+  
