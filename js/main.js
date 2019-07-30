@@ -1,4 +1,11 @@
 $(document).ready(function () {
+    $("#owl-demo").owlCarousel({
+        slideSpeed : 50,
+        items : 1, 
+        autoplay:true,
+        autoplayTimeout:5000,
+        loop:true
+    });
     var user = localStorage.getItem('user');
     if(user){
         $('#login-page').text(user);
