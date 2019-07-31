@@ -98,3 +98,18 @@
 .order-list{
     text-align: left
 }
+
+.category li{
+    text-transform: uppercase;
+    list-style-type: none;
+    font-weight: bold;
+    color: #FF9600;
+    margin-bottom: 15px;
+}
+.category{
+    margin-top: 50px;
+}
+
+.news{
+    color: #FF9600;
+}

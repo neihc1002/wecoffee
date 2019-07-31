@@ -1,0 +1,48 @@
+.fl{
+    border-left: 2px solid #FF9600;
+    height: 100%;
+    margin-left: 30px;
+}
+.fl>div{
+    margin-left: 30px;
+}
+.hl{
+    color: #FF9600; 
+}
+.tags ul li{
+    display: inline-block;
+    padding: 0;
+}
+.tags ul{
+    padding: 0;
+}
+.tags ul li a{
+    padding: 1px 5px;
+    border: 1px solid #000;
+    color: #000;
+    text-decoration-line: none;
+    font-size: 15px;
+    margin-right: 15px;
+}
+.tags{
+    margin-top: 320px;
+}
+#content{
+    margin: 100px 0
+}
+.news{
+    color: #FF9600;
+    margin-top: 20px;
+}
+
+.item div a{
+    text-decoration-line: none;
+    color: #fff;
+    padding: 5px 15px;
+    background-color: #FF9600;
+    margin-top: 30px;
+}
+
+.item .des{
+    margin: 40px 0;
+}
