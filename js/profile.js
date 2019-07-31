@@ -24,3 +24,11 @@ var view = function () {
     $('.history-list').hide();
     $('.history-detail').show();
 }
+
+var cancleOrder = function(){
+    $('#cancel-order-modal').modal();
+}
+var yescancle = function () {
+    $('.history-list tbody tr')[0].remove();
+    $('#cancel-order-modal').modal('toggle');
+}

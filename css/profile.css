@@ -41,3 +41,16 @@
 .favorite{
     display: none;
 }
+#cancel-order-modal .modal-dialog .modal-content{
+    background-color: #FF9600;
+}
+.yes-no a{
+    padding: 0px 30px;
+    background-color: #fff;
+    border-radius: 20px;
+    color: #000;
+    text-decoration-line: none;
+}
+.yes-no {
+    margin-top: 30px;
+}

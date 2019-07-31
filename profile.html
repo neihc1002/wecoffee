@@ -92,7 +92,8 @@
                                         <td>Đang giao</td>
                                         <td>29.000đ</td>
                                         <td><a href="#" onclick="view()" class="btn1 view">Xem</a></td>
-                                        <td><a href="#" class="btn1 cancle">Hủy đơn hàng</a></td>
+                                        <td><a href="#" onclick="cancleOrder()" class="btn1 cancle">Hủy đơn hàng</a>
+                                        </td>
                                     </tr>
                                     <tr>
                                         <th>#2</th>
@@ -171,6 +172,21 @@
                                     </tr>
                                 </tbody>
                             </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal" id="cancel-order-modal">
+            <div class="modal-dialog">
+                <div class="modal-content" style="border-radius: 0;">
+                    <div style="margin: 0 auto; padding: 100px 0" class="text-center">
+                        <i style="font-size: 100px; color: #fff" class="fa fa-check"></i>
+                        <h5 style="color: #fff; margin-top: 10px;">Bạn muốn hủy đơn hàng</h5>  
+                        <div class="yes-no">
+                           
+                            <a href="#" onclick="yescancle()" class="pull-left">Có</a>
+                            <a data-dismiss="modal"  style="padding: 0px 20px;" href="#" class="pull-right">Không</a>
                         </div>
                     </div>
                 </div>
