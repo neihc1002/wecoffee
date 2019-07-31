@@ -72,7 +72,7 @@ $('.pay').on('click',function (e) {
                 }
             } else {
                 cart = [];
-                var i = { id: $('#order-modal').find('[name=id]').val(), quantity: $('.quantity').text(), name: $('.item-name').text(), price: $('#order-modal').find('[name=price]').val() };
+                var i = { id: $('#order-modal').find('[name=id]').val( ), quantity: $('.quantity').text(), name: $('.item-name').text(), price: $('#order-modal').find('[name=price]').val() };
                 cart.push(i);
                 isNew = false;
             }
@@ -98,7 +98,7 @@ function updateTotal() {
         cart.forEach(function (item) {
             var subt = item.price*item.quantity;
             total += subt;  //Do the math!
-            list+='<p style="text-transform:uppercase;font-size:13px"><span class="item-quantity">'+item.quantity+'</span><span class="item-name">'+ item.name+'</span><span style="margin-left: 30px;font-weight: bold">'+formatNumber(subt, '.', ',')+'</span>đ</p>'
+            list+='<h5 style="text-transform:uppercase;font-size:13px"><span class="item-quantity">'+item.quantity+'</span>'+item.name+'<span style="margin-left: 30px;font-weight: bold">'+formatNumber(subt, '.', ',')+'</span>đ</h5>'
         })
         // for (var i = 0; i < cart.length; i++) {  //loop through the array
         //     var subt = cart[i].price*cart[i].quantity;
