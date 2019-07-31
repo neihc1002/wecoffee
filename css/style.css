@@ -63,3 +63,6 @@
 .borderless td, .borderless th {
     border: none;
 }
+a {
+    text-decoration-line: none !important;
+}
