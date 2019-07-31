@@ -1,3 +1,6 @@
+@import url(http://fonts.googleapis.com/css?family=Roboto:400,100,300,500,700,900);
+@import url(http://fonts.googleapis.com/css?family=Roboto+Condensed:400,300,700);
+
 #content{
     background-color: #E3E1E1;
 }
@@ -16,7 +19,7 @@
 }
 
 #content .item-info div{ 
-    margin-left: 40px;
+    margin-left: 25px;
     padding-top: 50px;
 }
 
@@ -29,7 +32,7 @@
 
 #content .item-info div a{ 
     background-color: #FF9600;
-    padding: 10px;
+    padding: 5px 10px;
     color: #fff
 }
 #content .item-info div h5{ 
@@ -107,5 +110,14 @@
     margin-bottom: 15px;
 }
 .category{
+    
     margin-top: 50px;
+}
+.price{
+    font-family: "Roboto";
+    font-weight: 400;
+}
+.item-name{
+    font-weight: bold;
+    font-size: 12px;
 }
