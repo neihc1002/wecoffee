@@ -93,10 +93,11 @@
 }
 .order-list .item-quantity{
     background-color: #FFA626;
-    width: 25px;
-    height: 25px;
+    width: 20px;
+    height: 19px;
     display: inline-block;
-    text-align: center
+    text-align: center;
+    margin-right: 5px;
 }
 .order-list{
     text-align: left
