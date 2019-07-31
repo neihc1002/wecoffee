@@ -1,4 +1,11 @@
 $(document).ready(function () {
+    if(localStorage.getItem('user')!==null){
+        $('.cart').show()
+        $('.cag').hide()
+    }else{
+        $('.cart').hide()
+        $('.cag').show()
+    }
     updateTotal()
     $('.item-info a').on('click', function (e) {
         e.preventDefault()
@@ -30,6 +37,23 @@ $(document).ready(function () {
             $('.price-modal').text(formatNumber($('.quantity').text() * $('#order-modal').find('[name=price]').val(), '.', ','));
         }
     })
+
+$('.pay').on('click',function (e) {
+    e.preventDefault();
+    var cart = JSON.parse(localStorage.getItem("cart"));
+    var his = JSON.parse(localStorage.getItem('his'));
+    if(cart){
+        if(his){
+            his.push({id:his[his.length-1]+1,cart:cart,date:new Date()});
+        }else{
+            his=[];
+            his.push({id:1,cart:cart,date:new Date()})
+        }
+    }
+    localStorage.setItem("his", JSON.stringify(his));
+    localStorage.removeItem('cart')
+    location.reload()
+})
 
     $('.btnAdd').on('click', function (e) {
         e.preventDefault();
@@ -65,17 +89,7 @@ $(document).ready(function () {
     })
 })
 
-function formatNumber(nStr, decSeperate, groupSeperate) {
-    nStr += '';
-    x = nStr.split(decSeperate);
-    x1 = x[0];
-    x2 = x.length > 1 ? '.' + x[1] : '';
-    var rgx = /(\d+)(\d{3})/;
-    while (rgx.test(x1)) {
-        x1 = x1.replace(rgx, '$1' + groupSeperate + '$2');
-    }
-    return x1 + x2;
-}
+
 function updateTotal() {
     var total = 0;
     var list = "";

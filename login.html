@@ -14,6 +14,12 @@
 </head>
 
 <body>
+    <script>
+        var user = localStorage.getItem('user');
+        if(user){
+            location.href='profile.html'
+        }
+        </script>
     <section id="header">
         <div id="nav">
             <div class="container">
@@ -39,10 +45,8 @@
                                 <a href="menu.html">Menu</a>
                             </li>
                             <li class="active">
-                                <a href="#" id="login-page">Đăng nhập</a>
-                                <div>
-                                    <a href="#" id="logout">Đăng xuất</a>
-                                </div>
+                                <a href="login.html" id="login-page">Đăng nhập</a>
+                                <a href="profile.html" id="profile"><i class="fa fa-user-circle"></i></a>
                             </li>
                         </ul>
                     </div>
@@ -57,7 +61,8 @@
                     <div>
                         <div class="login-form">
                             <h5 class="form-mar-bot">Đăng nhập</h5>
-                            <input placeholder="Nhập số điện thoại của bạn" class="phone-input form-mar-bot" type="text">
+                            <input placeholder="Nhập số điện thoại của bạn" class="phone-input form-mar-bot"
+                                type="text">
                             <a class="btn-login text-center form-mar-bot" href="#">Đăng nhập</a>
                             <h6 class="form-mar-bot">Hoặc đăng nhập bằng</h6>
                             <div class="">
@@ -74,20 +79,21 @@
                             <input name="ten" required placeholder="Tên của bạn" class="phone-input form-mar-bot-1"
                                 type="text">
                             <h5 class="form-mar-bot-1">Ngày sinh</h5>
-                            <input required class="phone-input form-mar-bot" type="text">
+                            <input required class="phone-input form-mar-bot" type="date">
                             <a class="btn-reg text-center form-mar-bot" href="#">Đăng ký</a>
                         </div>
                         <div class="login-form-email">
-                                <h5 class="form-mar-bot">Đăng nhập</h5>
-                                <input name="email" placeholder="Nhập email của bạn" class="phone-input form-mar-bot" type="text">
-                                <input placeholder="Mật khẩu" class="phone-input form-mar-bot" type="text">
-                                <a class="btn-login-email text-center form-mar-bot" href="#">Đăng nhập</a>
-                                <h6 class="form-mar-bot">Hoặc đăng nhập bằng</h6>
-                                <div class="">
-                                    <a class="login-another btn-a" text-center" href="#">FACEBOOK</a>
-                                    <a class="login-another-phone  btn-a text-center" href="#">ĐIỆN THOẠI</a>
-                                </div>
+                            <h5 class="form-mar-bot">Đăng nhập</h5>
+                            <input name="email" placeholder="Nhập email của bạn" class="phone-input form-mar-bot"
+                                type="text">
+                            <input placeholder="Mật khẩu" class="phone-input form-mar-bot" type="text">
+                            <a class="btn-login-email text-center form-mar-bot" href="#">Đăng nhập</a>
+                            <h6 class="form-mar-bot">Hoặc đăng nhập bằng</h6>
+                            <div class="">
+                                <a class="login-another btn-a" text-center" href="#">FACEBOOK</a>
+                                <a class="login-another-phone  btn-a text-center" href="#">ĐIỆN THOẠI</a>
                             </div>
+                        </div>
                     </div>
                 </div>
             </div>

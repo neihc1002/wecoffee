@@ -1,30 +1,22 @@
 $(document).ready(function () {
     var user = localStorage.getItem('user');
     if(user){
-        $('#login-page').text(user);
-        $('#login-page').on('click',function (e) {
-            e.preventDefault();
-            $('#logout').toggle();
-        })
-        $('#logout').on('click',function (e) {
-            e.preventDefault();
-            localStorage.clear('user')
-            localStorage.clear('cart')
-            location.reload();
-        })
-        $('.item .buy').on('click',function (e) {
-            e.preventDefault();
-            location.href = 'menu.html'
-        })
+        $('#login-page').hide();
+        $('#profile').show();
     }else{
-        $('#login-page').on('click',function (e) {
-            e.preventDefault();
-            location.href = "login.html"
-        })
-        $('.item .buy').on('click',function (e) {
-            e.preventDefault();
-            location.href = 'login.html'
-        })
+        $('#profile').hide();
+        $('#login-page').show();
     }
     
 })
+function formatNumber(nStr, decSeperate, groupSeperate) {
+    nStr += '';
+    x = nStr.split(decSeperate);
+    x1 = x[0];
+    x2 = x.length > 1 ? '.' + x[1] : '';
+    var rgx = /(\d+)(\d{3})/;
+    while (rgx.test(x1)) {
+        x1 = x1.replace(rgx, '$1' + groupSeperate + '$2');
+    }
+    return x1 + x2;
+}

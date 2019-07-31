@@ -1,0 +1,43 @@
+#profile .menu li{
+    list-style: none;
+    margin-bottom: 20px;
+}
+
+#profile .menu li a{
+    text-decoration-line: none;
+    color: #000;
+}
+.history tbody .btn1{
+    padding: 3px 30px;
+    background-color: #FF9600;
+    border-radius: 20px;
+    color: #fff;
+    text-decoration-line: none;
+    text-transform: uppercase
+}
+#profile .info span:first-child{
+    font-size: 50px;
+    vertical-align: middle;
+    margin-right: 10px;
+}
+
+#profile .info{
+    padding-left: 40px;
+    margin-bottom: 50px;
+}
+#profile{
+    margin: 50px 0;
+}
+.history, .favorite{
+    border-left: 2px solid #FF9600;
+    height: 100%;
+}
+.history table,.favorite table{
+    margin-left: 50px;
+}
+.history-detail{
+    display: none;
+}
+.favorite{
+    display: none;
+}

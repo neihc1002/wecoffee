@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/profile.css">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
+        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <title>Profile</title>
+</head>
+
+<body>
+    <script>
+        var user = localStorage.getItem('user');
+        if (!user) {
+            location.href = 'login.html'
+        }
+    </script>
+    <section id="header">
+        <div id="nav">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4">
+                        <a href="index.html"> <img src="image/Bản Vẽ Quy Chuẩn.png" alt="" srcset=""></a>
+                    </div>
+                    <div class="col-md-8">
+                        <ul class="menu">
+                            <li>
+                                <a href="story.html">Câu chuyện thương hiệu</a>
+                            </li>
+                            <li>
+                                <a href="blog.html">blog</a>
+                            </li>
+                            <li>
+                                <a href="member.html">Ưu đãi thành viên</a>
+                            </li>
+                            <li>
+                                <a href="store.html">Cửa hàng</a>
+                            </li>
+                            <li>
+                                <a href="menu.html">Menu</a>
+                            </li>
+                            <li class="active">
+                                <a href="login.html" id="login-page">Đăng nhập</a>
+                                <a href="profile.html" id="profile"><i class="fa fa-user-circle"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="profile">
+        <div class="container">
+            <div class="info">
+                <span class='fa fa-user-circle'></span>
+                <span class="my-name"></span>
+            </div>
+
+            <div class="row">
+                <div class="col-md-3">
+                    <ul class="menu">
+                        <li><a href="#" class="btn-his">Lịch sử đặt hàng</a></li>
+                        <li><a href="#" class="btn-favorite">Món yêu thích</a></li>
+                        <li><a href="#">Cài đặt</a></li>
+                        <li><a style="color: #AF0707" href="#" class="logout">Đăng xuất</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-9">
+                    <div class="history">
+                        <div class="history-list">
+                            <table class="table borderless">
+                                <thead>
+                                    <tr>
+                                        <th scope="col">Đơn</th>
+                                        <th scope="col">Thời gian</th>
+                                        <th scope="col">Trạng thái</th>
+                                        <th scope="col">Giá</th>
+                                        <th scope="col"></th>
+                                        <th scope="col"></th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <th>#3</th>
+                                        <td>29/07/2019</td>
+                                        <td>Đang giao</td>
+                                        <td>29.000đ</td>
+                                        <td><a href="#" onclick="view()" class="btn1 view">Xem</a></td>
+                                        <td><a href="#" class="btn1 cancle">Hủy đơn hàng</a></td>
+                                    </tr>
+                                    <tr>
+                                        <th>#2</th>
+                                        <td>28/07/2019</td>
+                                        <td>Đang giao</td>
+                                        <td>40.000đ</td>
+                                        <td><a href="#" class="btn1 view">Xem</a></td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <th>#1</th>
+                                        <td>28/07/2019</td>
+                                        <td>Đã giao</td>
+                                        <td>40.000đ</td>
+                                        <td><a href="#" class="btn1 view">Xem</a></td>
+                                        <td></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="history history-detail">
+                            <table class="table borderless">
+                                <thead>
+                                    <tr>
+                                        <th scope="col">Tên sản phẩm</th>
+                                        <th scope="col">Thời gian</th>
+                                        <th scope="col">Số lượng</th>
+                                        <th scope="col">Giá</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <th>ICE LATTE</th>
+                                        <td>8h 29/07/2019</td>
+                                        <td>1</td>
+                                        <td>29.000đ</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <div style="margin-left: 50px;margin-top: 30px;">
+                                <h6>Thông tin khác hàng</h6>
+                                <p>Số 1 ngõ 78 Nguyễn Phúc Lai , quận Đống Đa,HN</p>
+                                <p>01232596511</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="favorite">
+                        <div class="favorite-list">
+                            <table class="table borderless">
+                                <thead>
+                                    <tr>
+                                        <th scope="col">Tên sản phẩm</th>
+                                        <th scope="col">Số lượng</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>ICE LATTE</td>
+                                        <td>10</td>
+                                    </tr>
+                                    <tr>
+                                        <td>CAPUCHINO</td>
+                                        <td>7</td>
+                                    </tr>
+                                    <tr>
+                                        <td>LATTE MACCHIATO</td>
+                                        <td>4</td>
+                                    </tr>
+                                    <tr>
+                                        <td>AMERICANO</td>
+                                        <td>10</td>
+                                    </tr>
+                                    <tr>
+                                        <td>MATCHA MACCHIATO</td>
+                                        <td>10</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="footer">
+        <div class="container">
+            <div class="row footer-row-1"
+                style="border-bottom: 2px solid white; padding-top:100px; padding-bottom: 20px">
+                <div class="col-md-3">
+                    <a href="index.html"> <img src="image/Bản Vẽ Quy Chuẩn.png" alt="" srcset=""></a>
+                </div>
+                <div class="col-md-3">
+                    <ul>
+                        <li>
+                            ABOUT
+                        </li>
+                        <li>
+                            <a href="#">Về chúng tôi</a>
+                        </li>
+                        <li>
+                            <a href="#">Hạt cà phê của WE</a>
+                        </li>
+                        <li>
+                            <a href="#">Blog</a>
+                        </li>
+                        <li>
+                            <a href="#">Cơ hội nghề nghiệp</a>
+                        </li>
+                        <li>
+                            <a href="#">Cửa hàng</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <ul>
+                        <li>
+                            DELIVERY
+                        </li>
+                        <li>
+                            <a href="#">Shipping methods</a>
+                        </li>
+                        <li>
+                            <a href="#">Payment</a>
+                        </li>
+                        <li>
+                            <a href="#">Cash voucher</a>
+                        </li>
+                        <li>
+                            <a href="#">Return</a>
+                        </li>
+                        <li>
+                            <a href="#">Exchange</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <ul>
+                        <li>
+                            ALWAYS -ON SUPPORT
+                        </li>
+                        <li>
+                            Delivery 0832596511 (7:00-21:00)
+                        </li>
+                        <li>
+                            Support 0340912345 (7:00-21:00)
+                        </li>
+                        <li>
+                            ADDRESS
+                        </li>
+                        <li>
+                            Số 54 Phố Nguyễn Phúc Lai,
+                            quận Ba Đình, Hà Nội, VN
+                        </li>
+                        <li>
+                            0832596511
+                        </li>
+                        <li>
+                            @WECOFFEE.com
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row footer-row-2" style="padding-bottom: 30px; margin-top: 40px;">
+                <div class="col-md-6">
+                    <span style="color: white">Copyright @ 2018WECOFFEE All rigths reserved.</span>
+                </div>
+                <div class="col-md-2 text-center" style="border-right: 1px solid white">
+                    <span style="color: white;">PRIVACY POLICY</span>
+                </div>
+                <div class="col-md-2 text-center">
+                    <span style="color: white">TEAMS FOR USE</span>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+<script src="js/jquery-3.4.1.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/main.js"></script>
+<script src="js/profile.js"></script>
+
+</html>

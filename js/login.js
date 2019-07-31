@@ -10,7 +10,8 @@ $(document).ready(function () {
         var ten =  $('[name=ten]').val();
         var name = ho+' '+ten;
         if(name.trim().length>0){
-            localStorage.setItem("user", name);
+            var user = {name:name,id:1}
+            localStorage.setItem("user", JSON.stringify(user));
         }
         alert("Đăng nhập thành công! Quay về trang chủ")
         location.href = "index.html"

@@ -41,10 +41,8 @@
                                 <a href="menu.html">Menu</a>
                             </li>
                             <li>
-                                <a href="#" id="login-page">Đăng nhập</a>
-                                <div>
-                                    <a href="#" id="logout">Đăng xuất</a>
-                                </div>
+                                <a href="login.html" id="login-page">Đăng nhập</a>
+                                <a href="profile.html" id="profile"><i class="fa fa-user-circle"></i></a>
                             </li>
                         </ul>
                     </div>
@@ -54,11 +52,11 @@
     </section>
     <section id="slide">
         <div id="carousel-example-1z" class="carousel slide carousel-fade" data-ride="carousel">
-                <ol class="carousel-indicators">
-                        <li data-target="#carousel-example-1z" data-slide-to="0" class="active"></li>
-                        <li data-target="#carousel-example-1z" data-slide-to="1"></li>
-                        <li data-target="#carousel-example-1z" data-slide-to="2"></li>
-                    </ol>
+            <ol class="carousel-indicators">
+                <li data-target="#carousel-example-1z" data-slide-to="0" class="active"></li>
+                <li data-target="#carousel-example-1z" data-slide-to="1"></li>
+                <li data-target="#carousel-example-1z" data-slide-to="2"></li>
+            </ol>
             <div class="carousel-inner" role="listbox">
                 <!--First slide-->
                 <div class="carousel-item active">
@@ -248,7 +246,6 @@
                                             đó có Việt Nam.</p>
                                         <a href="#">Xem thêm</a>
                                     </div>
-
                                 </div>
                             </div>
                             <div class="col-md-6">
@@ -455,5 +452,16 @@
 <script src="js/bootstrap.min.js"></script>
 <script src="js/owl.carousel.min.js"></script>
 <script src="js/main.js"></script>
+<script>
+    $('.buy').on('click', function (e) {
+        e.preventDefault();
+        var user = localStorage.getItem('user');
+        if (user) {
+            location.href = 'menu.html';
+        } else {
+            location.href = 'login.html';
+        }
+    })
+</script>
 
 </html>
