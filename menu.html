@@ -39,9 +39,9 @@
                                 <a href="menu.html">Menu</a>
                             </li>
                             <li>
-                                    <a href="login.html" id="login-page">Đăng nhập</a>
-                                    <a href="profile.html" id="profile"><i class="fa fa-user-circle"></i></a>
-                                </li>
+                                <a href="login.html" id="login-page">Đăng nhập</a>
+                                <a href="profile.html" id="profile"><i class="fa fa-user-circle"></i></a>
+                            </li>
                         </ul>
                     </div>
                 </div>
@@ -59,7 +59,7 @@
                 <div class="col-md-3 cart text-center" style="display: none">
                     <h6>Giỏ hàng</h6>
                     <p>Tổng cộng <span class="total" style="margin-left: 100px;font-weight: bold">0</span>đ</p>
-                    <a href="#" class="pay"
+                    <a href="#" id="btn-pay-modal"
                         style="background-color: #FFA626;padding: 5px 30px; text-decoration-line: none;color: #fff">Thanh
                         toán</a>
                     <div class="order-list" style="margin-top: 20px;">
@@ -142,7 +142,7 @@
                                             </div>
                                         </div>
                                     </div>
-    
+
                                 </div>
                             </div>
                         </div>
@@ -212,7 +212,7 @@
                                             </div>
                                         </div>
                                     </div>
-    
+
                                 </div>
                             </div>
                         </div>
@@ -422,6 +422,108 @@
                     </div>
 
                 </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal" id="pay-modal">
+        <div class="modal-dialog  modal-lg">
+            <div class="modal-content" style="border-radius: 0">
+                <!-- Modal body -->
+                <div class="" style="margin: 25px">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+                <div class="container">
+                    <div class="row">
+                        <div class="offset-1 col-md-10">
+                            <input class="pay-form" type="text" placeholder="Địa chỉ giao hàng">
+                        </div>
+                        <div class="offset-1 col-md-5">
+                            <input class="pay-form" type="text" placeholder="Người nhận">
+                        </div>
+                        <div class="col-md-5">
+                            <input class="pay-form" type="text" placeholder="Số điện thoại">
+                        </div>
+                        <div class="offset-1 col-md-10">
+                            <input class="pay-form" type="text" placeholder="Địa chỉ giao hàng">
+                        </div>
+
+                        <div class="col-md-12">
+                            <ul class="payment-type-list">
+                                <li>
+                                    <div class="round">
+                                        <input type="radio" name="payment-type" id="direct" />
+                                        <label for="direct"></label>
+                                    </div>
+                                    <div>
+                                        <img src="image/icon png/cash.png" alt="" srcset="">
+                                        <span>Thanh toán khi giao hàng</span>
+                                    </div>
+
+                                </li>
+                                <li>
+                                    <div class="round">
+                                        <input type="radio" id="momo" name="payment-type" />
+                                        <label for="momo"></label>
+                                    </div>
+                                    <div>
+                                        <img src="image/icon png/momo.png" alt="" srcset="">
+                                        <span>Momo</span>
+                                    </div>
+
+                                </li>
+                                <li>
+                                    <div class="round">
+                                        <input type="radio" id="air" name="payment-type" />
+                                        <label for="air"></label>
+                                    </div>
+                                    <div>
+                                        <img src="image/icon png/airpay.png" alt="" srcset="">
+                                        <span>Aripay</span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="round">
+                                        <input type="radio" id="atm" name="payment-type" />
+                                        <label for="atm"></label>
+                                    </div>
+                                    <div>
+                                        <img src="image/icon png/atm.png" alt="" srcset="">
+                                        <span>Thẻ ATM</span>
+                                    </div>
+
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="offset-md-8 col-md-3">
+                            <a class="pay-finish pull-right" href="#">Thanh toán</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal" id="pay-success-modal">
+        <div class="modal-dialog">
+            <div class="modal-content" style="border-radius: 0;">
+                <div style="margin: 0 auto; padding: 100px 0" class="text-center">
+                    <i style="font-size: 100px; color: #fff" class="fa fa-check"></i>
+                    <h3 style="color: #fff; margin-top: 10px;">Thanh toán thành công</h3>
+                    <p style="color: #fff;">Chúc mừng bạn đã tích lũy được 1☆</p>
+                    <p style="color: #fff;">Cảm ơn bạn đồng hành cùng WECOFFEE</p>
+                    <!-- <div class="yes-no">
+                           
+                            <a href="#" onclick="yescancle()" class="pull-left">Có</a>
+                            <a data-dismiss="modal"  style="padding: 0px 20px;" href="#" class="pull-right">Không</a>
+                        </div> -->
+                </div>
+                <div>
+                    <a style="background-color: #FFFFFF;
+                    border-radius: 7px;
+                    padding: 5px 15px;
+                    color: #000;
+                    margin-right: 20px;" href="#" id="back-menu" class="pull-right">Về Menu</a>
+                </div>
+
             </div>
         </div>
     </div>

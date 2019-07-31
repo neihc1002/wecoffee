@@ -38,21 +38,36 @@ $(document).ready(function () {
         }
     })
 
-$('.pay').on('click',function (e) {
+    $('.pay-finish').on('click', function (e) {
+        e.preventDefault();
+        $('#pay-modal').modal("toggle")
+        $('#pay-success-modal').modal();
+    })
+    $('#back-menu').on('click', function (e) {
+        e.preventDefault();
+        localStorage.removeItem('cart')
+        location.reload();
+    })
+    
+$('#btn-pay-modal').on('click',function (e) {
     e.preventDefault();
-    var cart = JSON.parse(localStorage.getItem("cart"));
-    var his = JSON.parse(localStorage.getItem('his'));
-    if(cart){
-        if(his){
-            his.push({id:his[his.length-1]+1,cart:cart,date:new Date()});
-        }else{
-            his=[];
-            his.push({id:1,cart:cart,date:new Date()})
-        }
+    
+    if(localStorage.getItem('cart')){
+        $('#pay-modal').modal()
     }
-    localStorage.setItem("his", JSON.stringify(his));
-    localStorage.removeItem('cart')
-    location.reload()
+    // var cart = JSON.parse(localStorage.getItem("cart"));
+    // var his = JSON.parse(localStorage.getItem('his'));
+    // if(cart){
+    //     if(his){
+    //         his.push({id:his[his.length-1]+1,cart:cart,date:new Date()});
+    //     }else{
+    //         his=[];
+    //         his.push({id:1,cart:cart,date:new Date()})
+    //     }
+    // }
+    // localStorage.setItem("his", JSON.stringify(his));
+    // localStorage.removeItem('cart')
+    // location.reload()
 })
 
     $('.btnAdd').on('click', function (e) {
